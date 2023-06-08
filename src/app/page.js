@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import styles from './page.module.css'
-
+import Link from 'next/link';
 export default function Home() {
   {/* code explanation regarding (state) of other vedio */ }
   const [name, setName] = useState("anuj")
@@ -18,6 +18,10 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <Link href="login">Go to Login Page</Link>
+      <br></br>
+      <Link href="about">Go to About Page</Link>
+
       <h1>function, events and state</h1>
       <h3>{name}</h3>
       <button onClick={() => apple("Great")}>Click Me!</button>
